@@ -51,8 +51,7 @@ body{
     left: 0px;
   background-color: rgba(77, 77, 77, 0.555);
    border-radius: 10px;
-   overflow: hidden;
-
+  visibility: visible;
 }
 .next{
     outline: none;
