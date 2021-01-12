@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Trocchi&family=UnifrakturCook:wght@700&display=swap');
+
+.answer input[type="radio"]{
+ appearance: none;
+ width: 100%;
+border: none;
+
+outline: none;
+ margin-top: 0px;
+  position: relative;
+ pointer-events: none;
+ padding: 0;
+ 
+ 
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.192), rgba(255, 255, 255, 0.082),rgba(128, 128, 128, 0.055) ),url('../quiz game/pexels-pixabay-262488.jpg');
+}
+.answer{
+   
+    display: flex;
+    flex-direction: column;
+   text-transform: capitalize;
+
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.answer label{
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+ cursor: pointer;
+  margin-top: 0px;
+  padding-top: 0px;
+ 
+}
+.answer input[type="radio"]::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:40px;
+    top: 0px;
+    z-index: -2;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+  background-color: rgba(77, 77, 77, 0.555);
+   border-radius: 10px;
+   overflow: hidden;
+
+}
+.next{
+    outline: none;
+    border: 2px solid rgb(48, 11, 48);
+    background: linear-gradient(20deg ,rgb(8, 50, 235),rgb(71, 120, 197),rgb(145, 17, 230));
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+}
+.tryon{
+    background-color: rgb(80, 73, 73);
+    color:white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 10px;
+    outline: none;
+}
+.answer input[type="radio"]:checked::before{
+    background: linear-gradient(10deg,rgb(85, 231, 27),rgb(150, 241, 122),rgb(27, 241, 7) );
+  
+    width: 100%;
+    animation: full .5s linear;
+}
+@keyframes full{
+0%{
+    width: 30px;
+}
+100%{
+    width: 100%;
+}
+}
+.head{
+    text-align: center;
+    color: tomato;
+    font-weight: 700;
+    font-family: 'UnifrakturCook', cursive;
+  
+}
+.question{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+   font-family: 'Gill Sans', 'Gill Sans MT';
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.561);
+   text-align: center;
+    padding: 4px 20px;
+}
+.final{
+    font-family: 'Shojumaru', cursive;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.ques{
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-family: 'Trocchi', serif;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+.result{
+    background-color: rgba(255, 251, 251, 0.205);
+    color: rgb(31, 243, 84);
+    font-size: 1.9rem;
+    backdrop-filter: blur(5px);
+    padding: 40px 0;
+    font-family: 'Nosifer', cursive;
+    
+}
