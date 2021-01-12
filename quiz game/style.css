@@ -8,7 +8,7 @@
  width: 100%;
 border: none;
 -webkit-appearance: none;
- display:none;
+ visibility: hidden;
 outline: none;
  margin-top: 0px;
   position: relative;
